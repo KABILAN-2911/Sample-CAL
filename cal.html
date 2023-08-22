@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .c1{
+            border: 3px solid black;
+            display: inline-block;
+            padding: 20px;
+            padding-top: 10px;
+            position:relative;
+            top: 100px;
+
+
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="c1">
+        <strong><h1>CALCULATOR</h1></strong>
+    <input id="n1" type="number" placeholder="First number"><br><br>
+    <input id="n2" type="number" placeholder="Second number"><br><br>
+    <button type="button" onclick="ADD()">ADD</button><br><br>
+    <button type="button" onclick="SUB()">SUBTRACT</button><br><br>
+    <button type="button" onclick="MUL()">MULTIPLY</button><br><br>
+    <button type="button" onclick="DIV()">DIVIDE</button><br><br>
+    <strong><p id="a1"></p></strong></center>
+    <script>
+        function ADD(){
+            var a=parseInt(document.getElementById('n1').value);
+            var b=parseInt(document.getElementById('n2').value);
+            var c=a+b;
+            document.getElementById('a1').innerHTML="RESULT IS   "+c;
+        }
+        function SUB(){
+            var a=parseInt(document.getElementById('n1').value);
+            var b=parseInt(document.getElementById('n2').value);
+            var c=a-b;
+            document.getElementById('a1').innerHTML="RESULT IS   "+c;
+
+        }
+        function MUL(){
+            var a=parseInt(document.getElementById('n1').value);
+            var b=parseInt(document.getElementById('n2').value);
+            var c=a*b;
+            document.getElementById('a1').innerHTML="RESULT IS   "+c;
+        }
+        function DIV(){
+            var a=parseInt(document.getElementById('n1').value);
+            var b=parseInt(document.getElementById('n2').value);
+            var c=a/b;
+            document.getElementById('a1').innerHTML="RESULT IS   "+c;
+        }
+        
+    </script>
+
+    </div>
+</body>
+</html>
